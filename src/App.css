@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.root {
+  background-color: grey;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.child {
+  float: left;
+  width: 40%;
+  margin-right: 5% !important;
+  color: aliceblue;
+  background-color: black;
+}
+
+.second {
+}
