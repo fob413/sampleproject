@@ -4,10 +4,41 @@
     align-items: center;
     justify-content: center;
     border-radius: 100%;
-    display: inline-block;
+    /*display: inline-block;*/
     margin-right: 25px;
     background:'#ECF3F5'
 }
 .icon-container{
     margin: 0 16px;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    /*background-color: grey;*/
+}
+
+.left {
+    width: 48vw;
+    height: 100vh;
+    margin-right: 2vw;
+    float: left;
+    /*background-color: red;*/
+}
+
+.right {
+    width: 48vw;
+    height: 100vh;
+    /*background-color: blue;*/
+    float: left;
+}
+
+.rLeft {
+    width: 48vw;
+    display: block;
+}
+
+.rRight {
+    width: 48vw;
+    display: block;
 }

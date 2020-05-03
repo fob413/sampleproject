@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { REACT_FLOW_CHART } from '@mrblenny/react-flow-chart';
 
 const Circle = styled.div`
-  position: absolute;
   width: 150px;
   height: 150px;
   padding: 30px;
@@ -15,16 +14,15 @@ const Circle = styled.div`
   border-radius: 50%;
 `
 
-export const SidebarItem = ({ type, ports , properties , bg, id}) => {
-    // console.log(faEnvelope)
+export const CCircle = ({ type, ports , properties }) => {
     return (
         <Circle
             draggable={true}
             onDragStart={ (event) => {
-                event.dataTransfer.setData(REACT_FLOW_CHART, JSON.stringify({ id, type, ports , properties }))
+                event.dataTransfer.setData(REACT_FLOW_CHART, JSON.stringify({ type, ports , properties }))
             } }
         >
-            <div className="icon-container" >
+            <div className="" >
                 {type}
             </div>
         </Circle>

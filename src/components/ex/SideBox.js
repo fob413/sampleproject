@@ -1,24 +1,18 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import { REACT_FLOW_CHART } from '@mrblenny/react-flow-chart';
+import { REACT_FLOW_CHART } from '@mrblenny/react-flow-chart'
 
-const Circle = styled.div`
+const Box = styled.div`
   position: absolute;
-  width: 150px;
-  height: 150px;
   padding: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #d30000;
+  background: #3e3e3e;
   color: white;
-  border-radius: 50%;
+  border-radius: 10px;
 `
 
-export const SidebarItem = ({ type, ports , properties , bg, id}) => {
-    // console.log(faEnvelope)
+export const SideBox = ({ type, ports , properties , bg, id}) => {
     return (
-        <Circle
+        <Box
             draggable={true}
             onDragStart={ (event) => {
                 event.dataTransfer.setData(REACT_FLOW_CHART, JSON.stringify({ id, type, ports , properties }))
@@ -27,6 +21,6 @@ export const SidebarItem = ({ type, ports , properties , bg, id}) => {
             <div className="icon-container" >
                 {type}
             </div>
-        </Circle>
+        </Box>
     )
 }

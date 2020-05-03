@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
-import Parent from "./components/Parent";
+import MainApplication from './components/ex/MainApplication';
+import NewChart from "./components/ex/NewChart";
 
 function App() {
     return (
         <div>
-            <Parent/>
+            <NewChart />
         </div>
     )
 }
